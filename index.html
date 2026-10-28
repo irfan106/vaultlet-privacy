@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Vaultlet handles your data: everything stays encrypted on your phone, and the app has no internet access.">
+<title>Vaultlet privacy policy</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --paper: #ffffff;
+    --ink: #16181d;
+    --muted: #5b6270;
+    --line: #e3e6eb;
+    --accent: #2f4a7a;
+    --accent-soft: #e8edf6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0c0f;
+      --paper: #15171c;
+      --ink: #eceef2;
+      --muted: #a1a8b5;
+      --line: #2a2e36;
+      --accent: #9db4e0;
+      --accent-soft: #1e2635;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { margin-bottom: 28px; }
+  .brand { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 6px 0 14px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 14px; }
+  .meta strong { color: var(--ink); font-weight: 600; }
+  .lead { font-size: 18px; margin: 18px 0 0; }
+  .summary { background: var(--accent-soft); border-radius: 16px; padding: 18px 22px; margin: 28px 0 8px; }
+  .summary h2 { margin-top: 0; }
+  section { border-top: 1px solid var(--line); padding-top: 4px; margin-top: 28px; }
+  h2 { font-size: 21px; line-height: 1.3; margin: 22px 0 10px; }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 14px; color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 480px) {
+    h1 { font-size: 27px; }
+    .lead { font-size: 17px; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Vaultlet</div>
+    <h1>Privacy policy</h1>
+    <div class="meta">
+      <span><strong>Effective date:</strong> 27 October 2026</span>
+      <span><strong>Developer:</strong> Irfan Ali</span>
+      <span><strong>Contact:</strong> <a href="mailto:ir.irfan106@gmail.com">ir.irfan106@gmail.com</a></span>
+    </div>
+    <p class="lead">Vaultlet is a vault for your cards, bank details, passwords and identity documents. It is built so that your information stays on your phone. This policy explains what the app handles and what it doesn't.</p>
+  </header>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>Everything you add to Vaultlet is <strong>stored only on your phone</strong>, <strong>encrypted</strong>.</li>
+      <li>Vaultlet has <strong>no internet access</strong>. The Android app doesn't request the internet permission, so it can't send your data anywhere.</li>
+      <li>There are <strong>no accounts, no ads, no analytics and no tracking</strong>.</li>
+      <li>We (the developer) <strong>never receive, see or store</strong> any of your data.</li>
+      <li>Your data leaves your phone only when you choose to send it somewhere: a backup file you save or share, or a document copy you share.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What you can store in Vaultlet</h2>
+    <p>Whatever you choose to add, for example:</p>
+    <ul>
+      <li>Payment cards: card number, expiry, CVV, card PIN, name on card, issuer, limits, due dates and notes</li>
+      <li>Bank accounts: account number, IFSC, UPI ID, customer ID, net banking ID, PINs and notes</li>
+      <li>Logins: website, username and password</li>
+      <li>Identity documents: details such as Aadhaar, PAN, passport, driving licence, voter ID, vehicle RC and insurance, with photos or PDFs of them</li>
+      <li>Family members you add, and which items belong to whom</li>
+      <li>Reminders, tags and notes</li>
+    </ul>
+    <p>You decide what to add. Vaultlet doesn't collect anything else.</p>
+  </section>
+
+  <section>
+    <h2>How your data is protected</h2>
+    <ul>
+      <li><strong>Encryption on the device:</strong> the database is encrypted (SQLCipher), and document photos and PDFs are encrypted with AES-256-GCM. The encryption key is protected by your vault PIN and by your phone's secure hardware (Android Keystore). Fingerprint or face unlock, if you turn it on, uses the same secure hardware.</li>
+      <li><strong>Lock:</strong> the vault locks automatically when you leave the app (after 30 seconds by default) and needs your PIN or fingerprint to open.</li>
+      <li><strong>Reveal and screenshots:</strong> by default, card numbers and other secrets need your fingerprint or PIN before they're shown, and screenshots and screen recording of the app are blocked.</li>
+      <li><strong>Clipboard:</strong> when you copy a number, Vaultlet marks it as sensitive and clears it from the clipboard after a short time (45 seconds by default). Some keyboard apps keep their own clipboard history, which Vaultlet can't clear. You can turn that off in your keyboard's settings.</li>
+      <li><strong>No cloud copy:</strong> Android's automatic app backup is turned off for Vaultlet, so your vault isn't copied to Google's backup service.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Permissions the app uses</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Camera</td><td>Scanning a card or a document, only when you choose to</td></tr>
+          <tr><td>Notifications</td><td>Reminders you set (bill due dates, card and document expiry) and backup progress</td></tr>
+          <tr><td>Alarms, run at start-up</td><td>So reminders still fire after your phone restarts</td></tr>
+          <tr><td>Fingerprint or face</td><td>Unlocking the vault and confirming sensitive actions, if you turn it on</td></tr>
+          <tr><td>Vibration</td><td>Haptic feedback</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Photos and files you pick are chosen through Android's own photo picker and file picker, which give Vaultlet only the item you select.</p>
+  </section>
+
+  <section>
+    <h2>Features provided by Google Play services</h2>
+    <ul>
+      <li><strong>Document scanner:</strong> when you scan a document, the scanning screen is provided by Google Play services (ML Kit Document Scanner). It processes the images on your phone and returns them to Vaultlet. Google's own privacy policy applies to Google Play services: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li><strong>Text recognition:</strong> reading a card number from a photo is done on your phone by a model that is built into the app (ML Kit), with no network connection.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>When data leaves your phone</h2>
+    <p>Only when you do one of these:</p>
+    <ul>
+      <li><strong>Backups:</strong> you can export your vault to a file. It's encrypted with a passphrase you choose, and you decide where it goes: a folder on your phone, a cloud drive, email or another app. Whoever holds that file still needs your passphrase to open it. We never receive backups and can't recover a forgotten passphrase. Choose a strong one: anyone who gets the file can try passphrases without limit.</li>
+      <li><strong>Sharing a document copy:</strong> when you share a copy of a document, it goes to the app you pick in Android's share sheet. The receiving app's privacy policy then applies to that copy.</li>
+      <li><strong>Links:</strong> helpline and government website links open in your browser.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Keeping and deleting your data</h2>
+    <ul>
+      <li>Your data stays on your phone until you delete it.</li>
+      <li>You can delete single items at any time, or erase everything in <strong>Settings → Erase everything</strong>.</li>
+      <li>Uninstalling Vaultlet deletes the vault from your phone.</li>
+      <li>You can turn on automatic erasing after 10 wrong PIN attempts in Settings.</li>
+      <li>Because we never receive your data, there's nothing for us to delete on our side.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>If you forget your PIN</h2>
+    <p>Your PIN can't be recovered, by you or by us. It's the key to your encrypted data. The only way back is to erase the vault and restore a backup, so keep a recent backup.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Vaultlet is intended for adults (18+). It isn't directed at children, and we don't knowingly collect any information from anyone, children included.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we'll update this page and the effective date above. If a change affects how your data is handled, the app will tell you before it applies.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy or about Vaultlet's privacy: <a href="mailto:ir.irfan106@gmail.com">ir.irfan106@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Irfan Ali · Vaultlet</footer>
+</main>
+</body>
+</html>
